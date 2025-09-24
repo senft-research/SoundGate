@@ -8,7 +8,7 @@ repository = "https://thunderstore.io"
 namespace = "Curiosity_Core_Development"
 name = "SoundGate"
 description = "A mod that introduces a Input Sensitivity slider to the Audio Settings, allowing players the ability to block sounds under a particular threshold." 
-websiteUrl = ""
+websiteUrl = "https://github.com/senft-research/SoundGate"
 containsNsfwContent = false
 
 [package.dependencies]
