@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.7 - 2025-09-24
+
+### Changed
+
+- **Harmony Patches:** Fixed
+
 ## 0.1.4 - 2025-09-24
 
 ### Changed

@@ -6,7 +6,7 @@ This mod enables and configures several built-in features of the game’s VOIP s
 
 The noise gate itself is controlled via an **Input Sensitivity** slider found within the Audio Settings Menu. 
 
-![settingsDemo.png](settingsDemo.png)
+![settingsDemo.png](https://github.com/senft-research/SoundGate/blob/master/SoundGate/SoundGate/settingsDemo.png?raw=true)
 
 Sounds below the Sensitivity's threshold won’t be transmitted over VOIP.
 

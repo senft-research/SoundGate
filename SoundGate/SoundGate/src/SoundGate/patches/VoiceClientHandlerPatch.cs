@@ -11,16 +11,16 @@ internal static class VoiceClientHandlerPatch
 {
     [HarmonyPostfix]
     [HarmonyPatch(nameof(VoiceClientHandler.LocalPlayerAssigned))]
-    static void LocalPlayerAssigned_Postfix(Recorder recorder)
+    static void LocalPlayerAssigned_Postfix(Recorder r)
     {
-        if (recorder == null) return;
+        if (r == null) return;
 
-        Plugin.LocalRecorder = recorder;
+        Plugin.LocalRecorder = r;
 
-        recorder.VoiceDetection = true;
-        recorder.VoiceDetectionDelayMs = 200;
+        r.VoiceDetection = true;
+        r.VoiceDetectionDelayMs = 200;
 
-        var rtcAudioDsp = recorder.GetComponent<WebRtcAudioDsp>() ?? recorder.gameObject.AddComponent<WebRtcAudioDsp>();
+        var rtcAudioDsp = r.GetComponent<WebRtcAudioDsp>() ?? r.gameObject.AddComponent<WebRtcAudioDsp>();
         rtcAudioDsp.NoiseSuppression = true;
         rtcAudioDsp.HighPass = true;
         //Developer note: AEC turned off by standard, because the noise supression honestly is more than enough
