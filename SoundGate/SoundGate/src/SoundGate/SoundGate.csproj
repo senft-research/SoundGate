@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <AssemblyName>io.senftresearch</AssemblyName>
+        <AssemblyTitle>SoundGate</AssemblyTitle>
+        <Version>0.1.3</Version>
+    </PropertyGroup>
+
+
+  
+    <ItemGroup>
+        <PackageReference Include="PEAKModding.PEAKLib.UI" Version="*" Private="False"/>
+    </ItemGroup>
+    
+
+</Project>
